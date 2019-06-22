@@ -3,10 +3,10 @@
 My aim for this project is to create a reusable starting-point for Node Express applications.
 
 Features:
-* [] MongoDB with Mongoose
-* [] MVC Structure
-* [] RESTful API
-* [] Authentication with Passport
+* [ ] MongoDB with Mongoose
+* [ ] MVC Structure
+* [ ] RESTful API
+* [ ] Authentication with Passport
 
 ### Getting started:
 
