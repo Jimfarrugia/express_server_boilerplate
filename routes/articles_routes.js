@@ -6,7 +6,7 @@ router.get("/", articlesController.index);
 
 // router.post("/", articlesController.create);
 
-// router.get("/new", articlesController.make);
+router.get("/new", articlesController.make);
 
 // router.get("/:id", articlesController.show);
 

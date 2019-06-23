@@ -1,5 +1,12 @@
-function homepage (req, res) {
+function homepage(req, res) {
   res.render("pages/homepage");
 }
 
-module.exports = { homepage }
+function about(req, res) {
+  res.render("pages/about");
+}
+
+module.exports = { 
+  homepage, 
+  about 
+}
