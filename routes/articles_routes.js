@@ -4,7 +4,7 @@ const articlesController = require("./../controllers/articles_controller");
 
 router.get("/", articlesController.index);
 
-// router.post("/", articlesController.create);
+router.post("/", articlesController.create);
 
 router.get("/new", articlesController.make);
 

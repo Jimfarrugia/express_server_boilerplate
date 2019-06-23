@@ -5,7 +5,19 @@ function index(req, res) {
 }
 
 function create(req, res) {
-  
+  let errors = [];
+  if (!req.body.title) errors.push({text: "You must enter a title for the article."})
+  if (!req.body.body) errors.push({text: "You must enter a body for the article."})
+
+  if (errors.length > 0) {
+    res.render("articles/new"/*, {
+      errors: errors,
+      title: req.body.title,
+      body: req.body.body
+    }*/);
+  } else {
+    res.send("passed");
+  }
 }
 
 function make(req, res) {
