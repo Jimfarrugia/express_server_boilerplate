@@ -4,9 +4,9 @@ My aim for this project is to create a reusable starting-point for Node Express 
 
 Features:
 
-- [ ] MongoDB with Mongoose
-- [ ] MVC Structure
-- [ ] RESTful API
+- [x] MongoDB with Mongoose
+- [x] MVC Structure
+- [x] RESTful API
 - [ ] Authentication with Passport
 
 ### Getting started:
@@ -44,7 +44,6 @@ Features:
 - method-override
 - morgan
 - dotenv
-- concurrently
 - nodemon (devDependancy)
 
 ---
