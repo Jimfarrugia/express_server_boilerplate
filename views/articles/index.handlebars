@@ -1,2 +1,15 @@
-<h1>Articles Index</h1>
-<p>List of all articles will show here.</p>
+<h2 class="my-4">All Articles</h2>
+
+{{#each articles}}
+<div class="card card-body mb-3">
+  <h4>{{title}}</h4>
+  <p>{{body}}</p>
+  <p>
+    <a href="/articles/{{id}}">Show</a> |
+    <a href="/articles/edit/{{id}}">Edit</a>
+  </p>
+  <p><small>{{created_at}}</small></p>
+</div>
+{{else}}
+<p>There are currently no articles to display.</p>
+{{/each}}

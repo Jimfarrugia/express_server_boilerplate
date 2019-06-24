@@ -1,0 +1,9 @@
+<h2 class="my-3">{{article.title}}</h2>
+<p>{{article.body}}</p>
+<p>
+  <small>{{article.created_at}}</small>
+</p>
+<p>
+  <a href="/articles/edit/{{article.id}}" class="btn btn-warning">Edit Article</a>
+  <a href="/articles/{{article.id}}?_method=DELETE" class="btn btn-danger">Delete Article</a>
+</p>

@@ -8,14 +8,13 @@ router.post("/", articlesController.create);
 
 router.get("/new", articlesController.make);
 
-// router.get("/:id", articlesController.show);
+router.get("/:id", articlesController.show);
 
-// router.delete("/:id", articlesController.destroy);
+router.get("/edit/:id", articlesController.edit);
 
-// router.put("/:id", articlesController.update);
+router.put("/:id", articlesController.update);
+router.patch("/:id", articlesController.update);
 
-// router.patch("/:id", articlesController.update);
-
-// router.get("/:id/edit", articlesController.edit);
+router.delete("/:id", articlesController.destroy);
 
 module.exports = router;
