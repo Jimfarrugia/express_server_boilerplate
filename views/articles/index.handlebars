@@ -2,13 +2,17 @@
 
 {{#each articles}}
 <div class="card card-body mb-3">
-  <h4>{{title}}</h4>
+  <h4 class="mb-3">{{title}}</h4>
   <p>{{body}}</p>
-  <p>
-    <a href="/articles/{{id}}">Show</a> |
-    <a href="/articles/edit/{{id}}">Edit</a>
-  </p>
   <p><small>{{created_at}}</small></p>
+  <div class="mt-2">
+    <a href="/articles/{{id}}" class="btn btn-primary mr-2">Show</a>
+    <a href="/articles/edit/{{id}}" class="btn btn-warning mr-2">Edit</a>
+    <form action="/articles/{{id}}?_method=DELETE" method="POST" style="display:inline-block">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="Delete" class="btn btn-danger mr-2">
+    </form>
+  </div>
 </div>
 {{else}}
 <p>There are currently no articles to display.</p>
